@@ -1,26 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import MemoInput from "./components/MemoInput";
+import Content from "./components/Content";
+class App extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      desc : "",
+      contents:{month : '', day:'',desc:''},
+    }
+  }
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  render() {
+    console.log('====>App')
+    return(
+      <div className="App">
+        <h1>Melendar_test</h1>
+        <MemoInput onSubmit={function(_content){
+            this.setState(
+              {
+                contents : _content,
+              }
+            );
+          }.bind(this)}>
+        </MemoInput>
+        <Content data={this.state.contents}></Content>
+      </div>
+    );
+  }
 }
 
 export default App;
