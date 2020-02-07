@@ -24,5 +24,7 @@
   + 달력을 표시할 css 구현
 + 4일차 (02.03)
   + app.css로 메모 contents 삽입 구현중
-+ 5일차 (02.07)
-  + app.css로 메모 contents 삽입 구현중
++ 5일차 (02.05)
+  + app.css로 메모 contents 삽입 구현
++ 6일차 (02.06)
+  + 리액트 캘린더 api import
