@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import MemoInput from "./components/MemoInput";
 // import Content from "./components/Content";
 import TOC from "./components/TOC";
+import Calendar from 'react-calendar';
 class App extends Component {
   constructor(props){
     super(props);
@@ -43,6 +44,8 @@ class App extends Component {
         </MemoInput>
         <TOC data = {this.state.contents}></TOC>
         {/* <Content data={this.state.content}></Content> */}
+        <Calendar>
+        </Calendar>
       </div>
     );
   }
