@@ -28,3 +28,5 @@
   + app.css로 메모 contents 삽입 구현
 + 6일차 (02.06)
   + 리액트 캘린더 api import
++ 7일차 (02.09)
+  + 리액트 캘린더 api import
